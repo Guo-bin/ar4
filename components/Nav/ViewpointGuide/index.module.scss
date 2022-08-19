@@ -1,0 +1,23 @@
+.viewpointGuide {
+  width: 20vw;
+  height: 62px;
+  text-align: center;
+  position: relative;
+  & .icon {
+    width: 48px;
+    transform: translateY(-35%) scale(1.2);
+    vertical-align: middle;
+  }
+
+  & .title {
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    left: 0;
+    font-size: 13px;
+    height: 18px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
