@@ -1,22 +1,19 @@
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 
-const DynamicArjs = dynamic(() => import('../../components/Arjs'), {
+const DynamicArjs = dynamic(() => import("../../components/Arjs"), {
   ssr: false,
-})
+});
 
 function TestAr({ scene }) {
   return (
-    <div style={{ width: 'auto', height: 'auto'}}>
-      <DynamicArjs
-        nftUrl={`/nfts/${scene}`}
-        model="/gltf/women.gltf"
-      />
+    <div style={{ width: "auto", height: "auto" }}>
+      <DynamicArjs nftUrl={`/nfts/${scene}`} model='/glb/women.glb' />
     </div>
   );
 }
 
 export const getServerSideProps = async ({ query }) => {
-  return { props: { scene: query.s || 'test-no1' } };
+  return { props: { scene: query.s || "test-no1" } };
 };
 
 export default TestAr;
