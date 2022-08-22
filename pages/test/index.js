@@ -6,7 +6,7 @@ const DynamicArjs = dynamic(() => import('../../components/Arjs'), {
 
 function TestAr({ scene }) {
   return (
-    <div>
+    <div style={{ width: 'auto', height: 'auto'}}>
       <DynamicArjs
         nftUrl={`/nfts/${scene}`}
         model="/gltf/women.gltf"
