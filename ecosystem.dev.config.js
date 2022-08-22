@@ -41,7 +41,7 @@ module.exports = {
       ref: 'origin/demo',
       repo: REPO,
       path: TARGET_SERVER_APP_PATH,
-      'post-deploy': 'git pull origin demo && yarn install && yarn build && pm2 startOrRestart ecosystem.dev.config.js --env development'
+      'post-deploy': 'git pull origin dev && yarn install && yarn build && pm2 startOrRestart ecosystem.dev.config.js --env development'
     },
   }
 };
