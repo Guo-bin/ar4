@@ -38,7 +38,7 @@ module.exports = {
     development: {
       user: TARGET_SERVER_USER,
       host: TARGET_SERVER_HOST,
-      ref: 'origin/demo',
+      ref: 'origin/dev',
       repo: REPO,
       path: TARGET_SERVER_APP_PATH,
       'post-deploy': 'git pull origin dev && yarn install && yarn build && pm2 startOrRestart ecosystem.dev.config.js --env development'
