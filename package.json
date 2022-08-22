@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ar-js-org/ar.js": "^3.4.0",
+    "aframe-react": "^4.4.0",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
     "moment": "^2.29.4",
