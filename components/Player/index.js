@@ -34,6 +34,8 @@ const Player = () => {
   const setCurrentTime = () => {
     audioContext.currentTime = 50;
   };
+
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     async function fetData() {
       const url =

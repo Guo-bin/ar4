@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import pause from "public/icon/pause.svg";
 import styles from "./index.module.scss";

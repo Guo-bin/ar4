@@ -43,6 +43,7 @@ function useAudioPlayer() {
     });
   };
   const setAudioTime = () => setCurTime(audio.currentTime);
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     const audio = document.getElementById("audio");
     const setAudioData = () => {

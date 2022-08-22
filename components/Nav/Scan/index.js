@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import icon from "public/icon/scan.svg";
 import styles from "./index.module.scss";

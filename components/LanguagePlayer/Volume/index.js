@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import volumeSVG from "public/icon/volume.svg";
 import styles from "./index.module.scss";

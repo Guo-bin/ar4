@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import viewpointGuide from "public/icon/viewpointGuide.svg";
 import languageGuide from "public/icon/languageGuide.svg";
@@ -42,7 +43,7 @@ const InstructionPage = () => {
       </div>
       <div className={styles.container}>
         {InstructionData.map((instruction) => (
-          <section className={styles.section}>
+          <section key={instruction._id} className={styles.section}>
             <img className={styles.icon} src={instruction.icon} alt='' />
             <div className={styles.textArea}>
               <h4 className={styles.instructionTitle}>{instruction.title}</h4>
