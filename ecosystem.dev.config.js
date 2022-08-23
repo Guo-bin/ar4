@@ -20,7 +20,7 @@ module.exports = {
     // First application
     {
       name: `${PROJECT_NAME}-dev`,
-      script: 'yarn',
+      script: 'npm',
       args: 'start -p 9500',
       interpreter: '/bin/bash',
       env: {
@@ -41,7 +41,7 @@ module.exports = {
       ref: 'origin/dev',
       repo: REPO,
       path: TARGET_SERVER_APP_PATH,
-      'post-deploy': 'git pull origin dev && yarn install && yarn build && pm2 startOrRestart ecosystem.dev.config.js --env development'
+      'post-deploy': 'git pull origin dev && npm install && npm run build && pm2 startOrRestart ecosystem.dev.config.js --env development'
     },
   }
 };

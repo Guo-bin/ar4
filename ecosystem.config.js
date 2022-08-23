@@ -21,20 +21,20 @@ module.exports = {
     // First application
     {
       name: PROJECT_NAME,
-      script: 'yarn',
-      args: 'start -p 8801',
+      script: 'npm',
+      args: 'start -p 9500',
       // interpreter: '/bin/bash',
       env: {
         NODE_ENV: 'development',
-        PORT: 8808
+        PORT: 9501
       },
       env_uat: {
-        NODE_ENV: 'production',
-        PORT: 8804
+        NODE_ENV: 'uat',
+        PORT: 9502
       },
       env_production: {
         NODE_ENV: 'production',
-        PORT: 8801
+        PORT: 9500
       }
     },
   ],
@@ -50,7 +50,7 @@ module.exports = {
       ref: 'origin/master',
       repo: REPO,
       path: TARGET_SERVER_APP_PATH,
-      'post-deploy': 'git pull origin master && yarn install && yarn build && pm2 startOrRestart ecosystem.config.js --env production'
+      'post-deploy': 'git pull origin master && npm install && npm run build && pm2 startOrRestart ecosystem.config.js --env production'
     },
     development: {
       user: TARGET_SERVER_USER,
@@ -58,7 +58,7 @@ module.exports = {
       ref: 'origin/demo',
       repo: REPO,
       path: TARGET_DEMO_SERVER_APP_PATH,
-      'post-deploy': 'git pull origin demo && yarn install && yarn build && pm2 startOrRestart ecosystem.dev.config.js --env development',
+      'post-deploy': 'git pull origin demo && npm install && npm run build && pm2 startOrRestart ecosystem.dev.config.js --env development',
       env: {
         NODE_ENV: 'development'
       }
