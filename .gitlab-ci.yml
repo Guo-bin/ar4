@@ -8,7 +8,7 @@ deploy-dev:
     - star-cactus
   script:
     - echo "====== Deploy to demo server ======"
-    - yarn add pm2 --ignore-engines
+    - yarn add pm2
     # Initialize the remote folder with:
     - echo "Setup target server directories"
     - pm2 deploy ecosystem.dev.config.js development setup 2>&1 || true
