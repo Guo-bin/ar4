@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import pause from "public/icon/pause.svg";
+import pause from "public/images/icon/pause.svg";
 import styles from "./index.module.scss";
 const Pause = ({ handleClick }) => {
   return (

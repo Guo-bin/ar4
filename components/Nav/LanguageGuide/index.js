@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import icon from "public/icon/languageGuide.svg";
+import icon from "public/images/icon/languageGuide.svg";
 import styles from "./index.module.scss";
 const LanguageGuide = () => {
   return (

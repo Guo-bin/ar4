@@ -37,13 +37,15 @@ function useAudioPlayer() {
       source.connect(gainNode).connect(audioContext.destination);
       setgain(gainNode);
       setTrigger(false);
+      source.start();
     }
+  };
+  const setAudioTime = () => setCurTime(audio.currentTime);
+  useEffect(() => {
     audio.addEventListener("timeupdate", () => {
       setAudioTime();
     });
-  };
-  const setAudioTime = () => setCurTime(audio.currentTime);
-  /* eslint-disable react-hooks/exhaustive-deps */
+  }, []);
   useEffect(() => {
     const audio = document.getElementById("audio");
     const setAudioData = () => {

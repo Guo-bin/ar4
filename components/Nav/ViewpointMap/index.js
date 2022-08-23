@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import icon from "public/icon/viewpointMap.svg";
+import icon from "public/images/icon/viewpointMap.svg";
 import styles from "./index.module.scss";
 const ViewpointMap = () => {
   return (

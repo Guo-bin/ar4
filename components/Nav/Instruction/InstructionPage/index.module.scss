@@ -1,5 +1,5 @@
 .instructionPage {
-  position: absolute;
+  // position: absolute;
   bottom: 0;
   width: 100vw;
   height: 100vh;
@@ -37,7 +37,7 @@
     & .section {
       display: flex;
       align-items: center;
-      margin: 20px;
+      margin: 28px;
       & .icon {
         width: 48px;
         height: 48px;

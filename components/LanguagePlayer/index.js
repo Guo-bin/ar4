@@ -36,7 +36,7 @@ const LanguagePlayer = () => {
         ) : (
           <Play
             handleClick={() => {
-              setPlaying(true);
+              setPlaying(false);
             }}
             setVolumeXX={setVolumeXX}
           />

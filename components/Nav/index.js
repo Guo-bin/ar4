@@ -2,9 +2,9 @@ import React from "react";
 import Instruction from "./Instruction";
 import LanguageGuide from "./LanguageGuide";
 import ViewpointGuide from "./ViewpointGuide";
-import Scan from "./Scan";
 import ViewpointMap from "./ViewpointMap";
 import LanguagePlayer from "components/LanguagePlayer";
+import ChangeLanguage from "./ChangeLanguage";
 import styles from "./index.module.scss";
 import Player from "components/Player";
 const Nav = () => {
@@ -14,8 +14,8 @@ const Nav = () => {
         <Instruction />
         <LanguageGuide />
         <ViewpointGuide />
-        <Scan />
         <ViewpointMap />
+        <ChangeLanguage />
       </div>
       <div className={styles.languagePlayer}>
         {/* <Player /> */}

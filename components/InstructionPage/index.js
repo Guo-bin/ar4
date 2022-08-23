@@ -30,10 +30,8 @@ const InstructionData = [
 const InstructionPage = () => {
   return (
     <div className={styles.instructionPage}>
-      <div className={styles.upperSection}>
-        <h3 className={styles.title}>操作說明</h3>
-        <img className={styles.close} src={close.src} alt='' />
-      </div>
+      <h3 className={styles.title}>操作說明</h3>
+
       <div className={styles.container}>
         {InstructionData.map((instruction) => (
           <section className={styles.section}>
@@ -45,6 +43,7 @@ const InstructionPage = () => {
           </section>
         ))}
       </div>
+      <img className={styles.close} src={close.src} alt='' />
     </div>
   );
 };

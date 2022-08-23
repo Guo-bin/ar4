@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import play_arrow from "public/icon/play_arrow.svg";
+import play_arrow from "public/images/icon/play_arrow.svg";
 import styles from "./index.module.scss";
 const Play = ({ handleClick, setVolumeXX }) => {
   return (

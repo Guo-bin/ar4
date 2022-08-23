@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
-import volumeSVG from "public/icon/volume.svg";
+import volumeSVG from "public/images/icon/volume.svg";
 import styles from "./index.module.scss";
 const Volume = ({ volume, onVolumeUpdate, setVolumeXX }) => {
   const [isShowVolume, setIsShowVolume] = useState(false);
