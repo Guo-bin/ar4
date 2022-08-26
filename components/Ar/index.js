@@ -32,17 +32,25 @@ const Ar = () => {
           vr-mode-ui='enabled: false'
           device-orientation-permission-ui='enabled: false'>
           <a-assets>
-            <a-asset-item id='avatarModel' src='/glb/women.glb'></a-asset-item>
+            <a-asset-item
+              id='avatarModel'
+              src='/glb/women.glb'
+              autoplay></a-asset-item>
           </a-assets>
 
           <a-camera position='0 0 0' look-controls='enabled: false'></a-camera>
 
-          <a-entity mindar-image-target='targetIndex: 0'>
+          <a-entity
+            mindar-image-target='targetIndex: 0'
+            animation-mixer='clip:Bip001|Take 001|BaseLayer'
+            autoplay>
             <a-gltf-model
               rotation='0 0 0 '
               position='0 0 0.1'
               scale='0.005 0.005 0.005'
-              src='#avatarModel'></a-gltf-model>
+              src='#avatarModel'
+              animation-mixer='Bip001|Take 001|BaseLayer'
+              autoplay></a-gltf-model>
           </a-entity>
           <a-entity
             light='color: #fff; intensity: 2'
