@@ -1,0 +1,19 @@
+.arPage {
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  // background-color: bisque;
+  overflow: hidden;
+}
+
+.cmaIsOpen {
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 30;
+}

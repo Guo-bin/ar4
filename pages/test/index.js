@@ -1,19 +1,20 @@
 import dynamic from "next/dynamic";
-
+import ArPageComponent from "components/ArPage";
 const DynamicArjs = dynamic(() => import("../../components/Ar"), {
   ssr: false,
 });
 
-function TestAr({ scene }) {
+function TestAr({ target }) {
   return (
-    <div style={{ width: "auto", height: "auto" }}>
-      <DynamicArjs nftUrl={`/nfts/${scene}`} model='/glb/women.glb' />
+    <div>
+      <DynamicArjs targetUrl={`/mind/${target}.mind`} model='/glb/women.glb' />
+      <ArPageComponent />
     </div>
   );
 }
 
 export const getServerSideProps = async ({ query }) => {
-  return { props: { scene: query.s || "test-no1" } };
+  return { props: { target: query.id || "targets" } };
 };
 
 export default TestAr;

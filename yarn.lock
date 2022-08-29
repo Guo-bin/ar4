@@ -2459,12 +2459,19 @@
     "loader-utils" "^2.0.0"
     "regex-parser" "^2.2.11"
 
+"aframe-extras@^6.1.1":
+  "integrity" "sha512-w3o3sKfQG+cwe1ZoKUxvMLehh0D/MlvFZeg2XuyIto+Nrs/kGLPcb/fsI5DXM4jociZ3wVQfqcA1BVF+0Nq45A=="
+  "resolved" "https://registry.npmjs.org/aframe-extras/-/aframe-extras-6.1.1.tgz"
+  "version" "6.1.1"
+  dependencies:
+    "three-pathfinding" "^0.7.0"
+
 "aframe-react@^4.4.0":
   "integrity" "sha512-/3C0fhCRJywLSP7JsZM/nG/bGQxbt8oEnRK3DLOUmcCtd6xulpwOf8i/Mb0Mbg/U77Y097wdSZ0mVXgEL2+u4Q=="
   "resolved" "https://registry.npmjs.org/aframe-react/-/aframe-react-4.4.0.tgz"
   "version" "4.4.0"
 
-"aframe@^1.2.0":
+"aframe@*", "aframe@^1.2.0":
   "integrity" "sha512-e4lGvxLQ5CAptlbCqmnR4+qUf9s3f5SSnkMQaBsIFlJ2QMZhzEBr/SSV3+NEvMhsQf88EOvSpN1Vez942mBLcQ=="
   "resolved" "https://registry.npmjs.org/aframe/-/aframe-1.2.0.tgz"
   "version" "1.2.0"
@@ -11891,6 +11898,11 @@
   "version" "1.1.0"
   dependencies:
     "flatten-vertex-data" "^1.0.0"
+
+"three-pathfinding@^0.7.0":
+  "integrity" "sha512-UwWvzgio1UFe81n5jKHNzB4B+AG3wfZ54OKp7bTb1MHuC3cy6RTtr0dbbiPQQoqxzr+DRArR2DUwQSEknw5+nw=="
+  "resolved" "https://registry.npmjs.org/three-pathfinding/-/three-pathfinding-0.7.0.tgz"
+  "version" "0.7.0"
 
 "three@^0.132.2":
   "integrity" "sha512-0wcR7LxxkXMn6Gi58gEs3QvY8WpTVXA31L2VOvpjm4ZPYFRHCZC13UqynheFoS5OXDYgtBneN0dhbaNBE8iLhQ=="
